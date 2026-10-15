@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment #4 | Part 2 - Bootstrap Forms</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ASSIGNMENT<span>#4</span></a>
+      <div class="navbar-nav ms-auto d-flex flex-row">
+        <a class="nav-link" href="index.html">Part 1: Basic HTML</a>
+        <a class="nav-link active" href="part2.html">Part 2: Bootstrap Forms</a>
+        <a class="nav-link" href="part3.html">Part 3: Registration</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="student-banner mb-4 d-flex flex-wrap justify-content-between align-items-center">
+      <div>
+        <h4 class="mb-1 fw-bold">Part 2. Bootstrap Forms</h4>
+        <p class="mb-0 text-secondary small">Objective: Style forms with Bootstrap Grid, helper text, and validation feedback classes.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="custom-card">
+          <div class="card-header-custom d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Bootstrap Form Styling</h5>
+            <span class="task-badge">Task 2</span>
+          </div>
+          <div class="p-4">
+            <p class="small text-secondary mb-4">
+              Contact form recreated with Bootstrap classes (<code>.form-control</code>, <code>.form-label</code>, <code>.form-text</code>) and arranged using the Bootstrap Grid system.
+            </p>
+            <form action="#" class="row g-3">
+              <div class="col-md-6">
+                <label for="task2-name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="task2-name" placeholder="John Doe">
+                <div class="form-text">Enter your first and last name.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="task2-email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="task2-email" placeholder="name@example.com">
+                <div class="form-text">We will never share your email.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="task2-message" class="form-label">Message</label>
+                <textarea class="form-control" id="task2-message" rows="4" placeholder="Type your inquiry here..."></textarea>
+                <div class="form-text">Please provide clear details regarding your message.</div>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn-electric w-100">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="custom-card">
+          <div class="card-header-custom d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Bootstrap Validation Styles</h5>
+            <span class="task-badge">Task 3</span>
+          </div>
+          <div class="p-4">
+            <p class="small text-secondary mb-4">
+              Demonstrates Bootstrap's <code>.is-valid</code> and <code>.is-invalid</code> classes with <code>.valid-feedback</code> and <code>.invalid-feedback</code> messages below inputs.
+            </p>
+            <form action="#" class="row g-3">
+              <div class="col-md-6">
+                <label for="task3-name" class="form-label">Name</label>
+                <input type="text" class="form-control is-valid" id="task3-name" value="Mustafa" required>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="task3-email" class="form-label">Email</label>
+                <input type="email" class="form-control is-invalid" id="task3-email" placeholder="user@domain.com" required>
+                <div class="invalid-feedback">Email is required.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="task3-message" class="form-label">Message</label>
+                <textarea class="form-control is-invalid" id="task3-message" rows="4" placeholder="Write your message..." required></textarea>
+                <div class="invalid-feedback">Please enter a message before submitting.</div>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn-electric w-100">Submit Form</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container text-center">
+      Assignment #4. Forms and Validation &mdash; Astana IT University
+    </div>
+  </footer>
+
+</body>
+</html>

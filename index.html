@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment #4 | Part 1 - Basic HTML Forms</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ASSIGNMENT<span>#4</span></a>
+      <div class="navbar-nav ms-auto d-flex flex-row">
+        <a class="nav-link active" href="index.html">Part 1: Basic HTML</a>
+        <a class="nav-link" href="part2.html">Part 2: Bootstrap Forms</a>
+        <a class="nav-link" href="part3.html">Part 3: Registration</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="student-banner mb-4 d-flex flex-wrap justify-content-between align-items-center">
+      <div>
+        <h4 class="mb-1 fw-bold">Part 1. Basic HTML Forms</h4>
+        <p class="mb-0 text-secondary small">Objective: Create basic HTML forms with proper labels and HTML5 validation attributes.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="custom-card">
+          <div class="card-header-custom d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Simple Contact Form</h5>
+            <span class="task-badge">Task 0</span>
+          </div>
+          <div class="p-4">
+            <p class="small text-secondary mb-4">
+              Basic contact form using standard HTML elements and explicit <code>&lt;label&gt;</code> tags.
+            </p>
+            <form action="#">
+              <div class="plain-form-group">
+                <label for="task0-name">Name</label>
+                <input type="text" id="task0-name" name="name" class="plain-input">
+              </div>
+
+              <div class="plain-form-group">
+                <label for="task0-email">Email</label>
+                <input type="email" id="task0-email" name="email" class="plain-input">
+              </div>
+
+              <div class="plain-form-group">
+                <label for="task0-message">Message</label>
+                <textarea id="task0-message" name="message" rows="4" class="plain-input"></textarea>
+              </div>
+
+              <button type="submit" class="btn-electric w-100">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="custom-card">
+          <div class="card-header-custom d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Form with HTML5 Validation</h5>
+            <span class="task-badge">Task 1</span>
+          </div>
+          <div class="p-4">
+            <p class="small text-secondary mb-4">
+              Enforces built-in browser validation using <code>required</code>, <code>type="email"</code>, <code>minlength</code>, and <code>maxlength</code>.
+            </p>
+            <form action="#">
+              <div class="plain-form-group">
+                <label for="task1-name">Name *</label>
+                <input 
+                  type="text" 
+                  id="task1-name" 
+                  name="name" 
+                  class="plain-input" 
+                  placeholder="Enter your full name (2-50 chars)"
+                  required 
+                  minlength="2" 
+                  maxlength="50">
+              </div>
+
+              <div class="plain-form-group">
+                <label for="task1-email">Email *</label>
+                <input 
+                  type="email" 
+                  id="task1-email" 
+                  name="email" 
+                  class="plain-input" 
+                  placeholder="example@astanait.edu.kz"
+                  required 
+                  maxlength="100">
+              </div>
+
+              <div class="plain-form-group">
+                <label for="task1-message">Message * (Max 250 characters)</label>
+                <textarea 
+                  id="task1-message" 
+                  name="message" 
+                  rows="4" 
+                  class="plain-input" 
+                  placeholder="Write your message here (min 10, max 250 chars)..."
+                  required 
+                  minlength="10" 
+                  maxlength="250"></textarea>
+              </div>
+
+              <button type="submit" class="btn-electric w-100">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container text-center">
+      Assignment #4. Forms and Validation &mdash; Astana IT University
+    </div>
+  </footer>
+
+</body>
+</html>
